@@ -1,0 +1,7 @@
+{
+  "tslint.autoFixOnSave": false,
+  "editor.formatOnSave": true,
+  "prettier.jsonEnable": ["json"],
+  "prettier.singleQuote": true,
+  "prettier.cssEnable": ["css", "less", "scss"]
+}
