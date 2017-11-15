@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './GameComponent.css';
-import Disappointment from 'src/components/Disappointment';
+import Disappointment from 'components/Disappointment';
 
 export default class GameComponent extends React.Component {
   render() {
