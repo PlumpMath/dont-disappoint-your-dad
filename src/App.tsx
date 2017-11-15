@@ -1,22 +1,37 @@
 import * as React from 'react';
+import GameComponent from './components/GameComponent';
 import './App.css';
 
-const logo = require('./logo.svg');
-
-class App extends React.Component {
+export default class App extends React.Component<{}, {}> {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <div className="App-wrapper">
+        <div className="App-title">Don't Disappoint Your Dad</div>
+        <div className="App-content-container">
+          <div className="App-description-container">
+            description is a really long description that may not fit all the
+            way adjfnjk dfh kdfjklas dslkfj sdlkfjsa ldkfj aadf fds
+          </div>
+          <div className="App-game-container">
+            <GameComponent />
+          </div>
+          <div className="App-controls-container">
+            description is a really long description that may not fit all the
+            way dfasj kdsfj kdjsklfj description is a really long description
+            that may not fit all the waydescription is description is a really
+            long description that may not fit all the way dfasj kdsfj kdjsklfj
+            description is a really long description that may not fit all the
+            waydescription is description is a really long description that may
+            not fit all the way dfasj kdsfj kdjsklfj description is a really
+            long description that may not fit all the waydescription is really
+            long description that may not fit all the way dfasj kdsfj kdjsklfj
+            description is a really long description that may not fit all the
+            waydescription is really long description that may not fit all the
+            way dfasj kdsfj kdjsklfj description is a really long description
+            that may not fit all the waydescription is
+          </div>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
       </div>
     );
   }
 }
-
-export default App;

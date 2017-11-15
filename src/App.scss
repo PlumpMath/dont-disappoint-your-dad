@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+.App-wrapper {
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  .App-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .App-content-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+
+    .App-game-container {
+      width: 100vw;
+      height: calc(100vw * 9 / 16);
+      flex: none;
+      order: 5;
+    }
+
+    .App-description-container {
+      order: 7;
+      flex: 1 0;
+    }
+
+    .App-controls-container {
+      order: 9;
+      flex: 1 0;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .App-wrapper {
+    justify-content: center;
+
+    .App-title {
+      width: 60%;
+    }
+
+    .App-content-container {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 0;
+
+      .App-game-container {
+        width: 60vw;
+        height: calc(60vw * 9 / 16);
+      }
+
+      .App-description-container {
+        order: 1;
+        margin-left: 2%;
+        margin-right: 2%;
+      }
+
+      .App-controls-container {
+        margin-left: 2%;
+        margin-right: 2%;
+      }
+    }
+  }
+}
