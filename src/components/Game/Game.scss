@@ -1,0 +1,25 @@
+.Game-wrapper {
+  background-color: #924b7a;
+  color: white;
+  width: 100%;
+  height: calc(100vw * 9 / 16);
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+  border: 0.4vw solid white;
+}
+
+.Score-area {
+  position: absolute;
+  width: 21%;
+  left: 67%;
+  height: 29%;
+  top: 36%;
+  background-color: #70335c;
+}
+
+@media (min-width: 1025px) {
+  .Game-wrapper {
+    height: calc(60vw * 9 / 16);
+  }
+}

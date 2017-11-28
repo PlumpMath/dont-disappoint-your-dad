@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #924b7a;
+}
+
 .App-wrapper {
   top: 0;
   display: flex;
@@ -9,11 +13,10 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-
-  .App-title {
-    width: 100%;
-    text-align: center;
-  }
+  font-family: Roboto;
+  font-size: 4vw;
+  color: white;
+  line-height: 4.7vw;
 
   .App-content-container {
     display: flex;
@@ -23,25 +26,46 @@
 
     .App-game-container {
       width: 100vw;
-      height: calc(100vw * 9 / 16);
       flex: none;
       order: 5;
+
+      .App-title {
+        width: 100%;
+        text-align: center;
+      }
     }
 
     .App-description-container {
       order: 7;
       flex: 1 0;
+      margin-left: 2%;
+      margin-right: 2%;
+      text-align: center;
+
+      .App-description-link {
+        background-image: url('assets/mark-github.svg');
+        background-repeat: no-repeat;
+        background-position-x: 50%;
+        background-size: contain;
+        width: 100%;
+        height: 6vw;
+      }
     }
 
     .App-controls-container {
       order: 9;
       flex: 1 0;
+      margin-left: 2%;
+      margin-right: 2%;
+      text-align: center;
     }
   }
 }
 
 @media (min-width: 1025px) {
   .App-wrapper {
+    font-size: 1.3vw;
+    line-height: 1.7vw;
     justify-content: center;
 
     .App-title {
@@ -56,18 +80,17 @@
 
       .App-game-container {
         width: 60vw;
-        height: calc(60vw * 9 / 16);
       }
 
       .App-description-container {
         order: 1;
-        margin-left: 2%;
-        margin-right: 2%;
+
+        .App-description-link {
+          height: 2vw;
+        }
       }
 
       .App-controls-container {
-        margin-left: 2%;
-        margin-right: 2%;
       }
     }
   }

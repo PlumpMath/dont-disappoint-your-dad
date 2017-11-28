@@ -1,0 +1,22 @@
+.Ball-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 100;
+
+  .Ball-object {
+    width: 4.75%;
+    height: 4.75% * 1.7778;
+    position: relative;
+    background-color: white;
+    left: -2%;
+    top: -2% * 1.7778;
+  }
+}
+
+@keyframes returning {
+  100% {
+    transform: translate(15.5%, 82.5%);
+  }
+}
