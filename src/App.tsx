@@ -17,9 +17,14 @@ export default class App extends React.Component<{}, {}> {
             </p>
             <p>
               It was created for Github Game Jam 2017 in React. The full source
-              code is available on GitHub:
+              code is available on GitHub.
             </p>
-            <div className="App-description-link" />
+            <a
+              href="https://github.com/Shurelia/dont-disappoint-your-dad"
+              target="_blank"
+            >
+              <div className="App-description-link link-github" />
+            </a>
           </div>
           <div className="App-game-container">
             <div className="App-title">Don't Disappoint Your Dad</div>
