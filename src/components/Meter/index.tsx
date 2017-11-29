@@ -14,6 +14,10 @@ export default class Meter extends React.Component<MeterProps, MeterState> {
     let meterLabel: string;
     if (this.props.disappointmentLevel > DISAPPOINTMENT_PHRASES.length - 1) {
       meterLabel = '. . .';
+    } else if (this.props.disappointmentLevel < 0) {
+      meterLabel = `${DISAPPOINTMENT_PHRASES[0]} x${Math.abs(
+        this.props.disappointmentLevel
+      ) + 1}`;
     } else {
       meterLabel = DISAPPOINTMENT_PHRASES[this.props.disappointmentLevel];
     }
@@ -27,13 +31,13 @@ export default class Meter extends React.Component<MeterProps, MeterState> {
 }
 
 export const DISAPPOINTMENT_PHRASES = [
-  'stunned',
-  'borderline proud',
+  'proud',
+  'borderline impressed',
   `maybe I'll have grandkids after all`,
   'is this really my kid?',
-  'kinda surprised',
+  'mildly surprised',
   'the usual',
-  'why do I even try',
+  'why do I even try?',
   'maybe the second kid will be better',
   'I need a beer',
   'did my wife cheat on me?',
