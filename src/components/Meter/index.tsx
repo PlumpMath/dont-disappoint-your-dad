@@ -38,7 +38,7 @@ export const DISAPPOINTMENT_PHRASES = [
   'mildly surprised',
   'the usual',
   'why do I even try?',
-  'maybe the second kid will be better',
+  'maybe the next kid will be better',
   'I need a beer',
   'did my wife cheat on me?',
   'despair',
