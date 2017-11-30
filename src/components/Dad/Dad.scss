@@ -4,7 +4,8 @@
   left: 70%;
   top: 5%;
   position: absolute;
-  background-color: black;
+  background-image: url('../../assets/dad.png');
+  background-size: 100% 100%;
   transition: all 1s;
 
   .Dad-arm {
@@ -14,7 +15,8 @@
     width: 120%;
     height: 12%;
     transform-origin: 10% 50%;
-    background-color: pink;
+    background-image: url('../../assets/dad-arm.png');
+    background-size: 100% 100%;
     transition: all 0.5s;
 
     .Dad-ball {

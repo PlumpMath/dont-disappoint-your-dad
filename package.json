@@ -1,8 +1,12 @@
 {
   "name": "dont-disappoint-your-dad",
-  "version": "0.9.4",
+  "version": "1.0.0",
   "private": true,
   "homepage": ".",
+  "repository" : { 
+    "type" : "git", 
+    "url" : "https://github.com/Shurelia/dont-disappoint-your-dad.git"
+  },
   "dependencies": {
     "react": "^16.1.1",
     "react-dom": "^16.1.1",

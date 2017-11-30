@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #924b7a;
+  background-color: #587371;
 }
 
 .App-wrapper {
@@ -31,6 +31,8 @@ body {
 
       .App-title {
         width: 100%;
+        font-size: 7vw;
+        line-height: 7.5vw;
         text-align: center;
       }
     }
@@ -83,6 +85,11 @@ body {
 
       .App-game-container {
         width: 60vw;
+
+        .App-title {
+          font-size: 4vw;
+          line-height: 4vw;
+        }
       }
 
       .App-description-container {
