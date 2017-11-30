@@ -4,6 +4,7 @@ import ButtonArea from 'components/ButtonArea';
 import Dad from 'components/Dad';
 import Ball from 'components/Ball';
 import Meter from 'components/Meter';
+import Rain from 'components/Rain';
 import './Game.css';
 
 interface GameProps {}
@@ -91,6 +92,7 @@ export default class Game extends React.Component<GameProps, GameState> {
           updateBallLocation={this.updateBallLocation}
         />
         <Meter disappointmentLevel={this.state.disappointmentLevel} />
+        <Rain ballLocation={this.state.ballLocation} />
         <ButtonArea
           buttonArmPressHandler={this.buttonArmPressHandler}
           buttonArmReleaseHandler={this.buttonArmReleaseHandler}
