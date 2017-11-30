@@ -27,8 +27,8 @@ export default class App extends React.Component<{}, {}> {
             </a>
           </div>
           <div className="App-game-container">
-            <div className="App-title">Don't Disappoint Your Dad</div>
             <Game />
+            <div className="App-title">Don't Disappoint Your Dad</div>
           </div>
           <div className="App-controls-container">
             <h3>Controls</h3>
