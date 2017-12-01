@@ -5,12 +5,14 @@
   display: flex;
   bottom: 0;
   justify-content: space-around;
-  touch-action: none;
+  align-items: flex-end;
 
   .Button {
-    width: 33%;
-    height: 100%;
+    width: 33.3%;
+    height: 33.3%;
+    bottom: 0;
     z-index: 1000;
+    touch-action: none;
   }
 
   .ButtonArea-display {
